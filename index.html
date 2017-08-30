@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Trivia Game</title>
+	<link rel="stylesheet" href="styles.css">
+	
+</head>
+<body onload="game()">
+	<div id="background">
+		<img src="BMW_Riedel.png" alt="" id="logo">
+		<p id="game-title">Engineering Trivia</p>
+		<p id="progress">Question: <span id="question-no"></span>&#47;5</p>
+		<div id="question-container"></div>
+		<div id="button-container">
+			<div class="row">
+				<button class="blue-button answer-button" id="button1" onclick=checkAnswer(this.innerHTML)></button>
+				<button class="white-button answer-button" id="button2" onclick=checkAnswer(this.innerHTML)></button>
+			</div>
+			<div class="row">
+				<button class="white-button answer-button" id="button3" onclick=checkAnswer(this.innerHTML)></button>
+				<button class="blue-button answer-button" id="button4" onclick=checkAnswer(this.innerHTML)></button>
+			</div>
+		</div>
+		<div id="prompt">
+			<input type="text" placeholder="Now it's your turn to ask us a question! CLICK HERE" id="input" onfocus="this.placeholder='Enter Your Question'">
+			<button id="send-email" class="blue-button" onclick="sendEmail()">Ask Us</button>
+		</div>
+	</div>
+	<script src="scripts.js"></script>
+</body>
+</html>
