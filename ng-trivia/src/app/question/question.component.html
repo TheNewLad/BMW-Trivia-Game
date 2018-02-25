@@ -1,0 +1,10 @@
+<p 
+  class="question"
+  >{{ questions[counterService.getCount()].getQuestion() }}</p>
+<div class="answers">
+  <button
+    class="answers__button"
+    *ngFor="let answer of questions[counterService.getCount()].getAnswers()"
+    (click)="counterService.increment()"
+    >{{ answer.getAnswer() }}</button>
+</div>
