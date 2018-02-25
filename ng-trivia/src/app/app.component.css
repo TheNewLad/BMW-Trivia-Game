@@ -1,0 +1,27 @@
+.app {
+    display: grid;
+    width: 500px;
+    height: 350px;
+    background-color: gray;
+    grid-template-areas: 
+        "app__header"
+        "app__questions";
+    padding: 5px;
+}
+
+/* Header */
+.app__header {
+    grid-area: app__header;
+    display: flex;
+    justify-content: space-between;
+}
+
+.app__header__img {
+    width: 75px;
+    height: 75px;
+}
+
+/* Questions */
+.app__questions {
+    grid-area: app__questions;
+}

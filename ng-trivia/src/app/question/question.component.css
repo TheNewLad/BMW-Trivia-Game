@@ -1,0 +1,18 @@
+.question {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.answers {
+    padding: 5px 60px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.answers__button {
+    padding: 10px;
+    width: 175px;
+}
